@@ -14,21 +14,21 @@ class T
 		int i;
 		void func1()
 		{
-			std::cout << "func() start" << std::endl;
-			std::cout << "func() end" << std::endl;
+			std::cout << "func1() start" << std::endl;
+			std::cout << "func1() end" << std::endl;
 		}
 
 		void func2()
 		{
-			std::cout << "func() start" << std::endl;
+			std::cout << "func2() start" << std::endl;
 			i = 1;
-			std::cout << "func() end" << std::endl;
+			std::cout << "func2() end" << std::endl;
 		}
 
 		virtual void func3()
 		{
-			std::cout << "func() start" << std::endl;
-			std::cout << "func() end" << std::endl;
+			std::cout << "func3() start" << std::endl;
+			std::cout << "func3() end" << std::endl;
 		}
 };
 
