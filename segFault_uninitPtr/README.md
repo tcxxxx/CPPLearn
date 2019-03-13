@@ -30,7 +30,7 @@ This example is ~~about how using a null pointer **may** cause a segmentation fa
   - but trying to access the variable members would cause a segmentation fault; 
   - but trying to access the virtual function members would cause a segmentation fault; 
 
-  -------------------------------------
-  
-  #### Helpful links:
-  - https://stackoverflow.com/questions/669742/accessing-class-members-on-a-null-pointer
+-------------------------------------
+
+#### Helpful links:
+- https://stackoverflow.com/questions/669742/accessing-class-members-on-a-null-pointer
