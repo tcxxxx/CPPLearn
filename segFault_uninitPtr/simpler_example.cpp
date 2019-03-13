@@ -43,6 +43,7 @@ void test(bool init_=false)
 	if (init_)
 		ptr_ = new T;
 
+	std::cout << "ptr_ value: " << reinterpret_cast<long> (ptr_) << std::endl;	
 	std::cout << "accessing func1:" << std::endl;
 	ptr_->func1();
 	std::cout << "accessing func2:" << std::endl;
@@ -58,7 +59,9 @@ void test2(bool init_=false)
 	T * ptr_ = NULL;
 	if (init_)
 		ptr_ = new T;
-
+	
+	std::cout << "ptr_ value: " << reinterpret_cast<long> (ptr_) << std::endl;	
+	std::cout << "accessing func3:" << std::endl;
 	ptr_->func3();
 	delete ptr_;
 }
