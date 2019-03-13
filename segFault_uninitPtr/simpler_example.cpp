@@ -33,7 +33,7 @@ class T
 };
 
 /*
-	TEST: accessing two non-volatile functions:
+	TEST: accessing two non-virtual functions:
 		func1 does nothing but std::cout;
 		func2 tries to operate on the member variable i;
 */
@@ -51,7 +51,7 @@ void test(bool init_=false)
 }
 
 /*
-	TEST2: accessing a volatile function member.
+	TEST2: accessing a virtual function member.
 */
 void test2(bool init_=false)
 {
@@ -70,7 +70,7 @@ int main()
 	// std::cout << std::endl;
 
 	std::cout << "ptr uninitialized" << std::endl;
-	// accessing a non-volatile member function
+	// accessing a non-virtual member function
 	test(false); 
 	test2(false);
 	return 0;
