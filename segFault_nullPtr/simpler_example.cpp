@@ -1,7 +1,7 @@
 #include <iostream>
 /*
-	Example:
-		Segmentation Fault caused by using uninitialized pointer.
+	Example (a simpler one):
+		Using a NULL pointer to access member functions of a class.
 */
 
 class T
