@@ -7,22 +7,16 @@
 class T
 {
 	public:
-		T()
-		{
-			std::cout << "(T) construction" << std::endl;
-		}
-		~T() 
-		{
-			std::cout << "(T) destruction" << std::endl;
-		}
+		T(){ std::cout << "(T) construction" << std::endl; }
+		~T() { std::cout << "(T) destruction" << std::endl; }
 
 	public:
 		int i;
 		void func()
 		{
-			std::cout << "start executing func()" << std::endl;
+			std::cout << "func() start" << std::endl;
 			i = 0;
-			std::cout << "end executing func()" << std::endl;
+			std::cout << "func() end" << std::endl;
 		}
 };
 
@@ -68,13 +62,6 @@ public:
 
 };
 
-void test1()
-{
-	CE * ce_ptr = new CE;
-	ce_ptr->init_T();
-	delete ce_ptr;
-}
-
 void test2(bool init_=false)
 {
 	CE * ce_ptr = new CE;
@@ -86,9 +73,10 @@ void test2(bool init_=false)
 
 int main()
 {
-	//test1();
-	// std::cout << std::endl;
+	std::cout << "ptr initialized" << std::endl;
 	test2(true);
+	std::cout << std::endl;
+	std::cout << "ptr uninitialized" << std::endl;
 	test2(false);
 
 	return 0;
